@@ -1,7 +1,15 @@
-Esta línea se ha hecho desde el repositorio remoto del owner
+# ALMACENAMIENTO HMTL5
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed egestas. Arcu non sodales neque sodales ut etiam sit. Quam quisque id diam vel quam elementum. Ut lectus arcu bibendum at varius vel pharetra vel. Suspendisse in est ante in. A erat nam at lectus. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Cras semper auctor neque vitae tempus quam pellentesque nec. Morbi tristique senectus et netus et malesuada fames ac. Orci a scelerisque purus semper eget. Quis commodo odio aenean sed adipiscing. Ut aliquam purus sit amet luctus. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Facilisis volutpat est velit egestas dui. Velit egestas dui id ornare arcu odio. Nisi lacus sed viverra tellus in hac.
+Repositorio del TEAM-ARES para le recreacion de una vista de spotify con ciertas funcionalidades, utilizando HTML5, CSS y JavaScript para las diferentes funcionalidades
 
-Augue mauris augue neque gravida in fermentum et sollicitudin. At lectus urna duis convallis convallis tellus id interdum velit. Varius duis at consectetur lorem donec. Vestibulum sed arcu non odio euismod lacinia. Justo eget magna fermentum iaculis eu non diam. Massa ultricies mi quis hendrerit. Est ullamcorper eget nulla facilisi etiam dignissim. Suspendisse in est ante in nibh mauris cursus. Nulla malesuada pellentesque elit eget gravida. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Mollis nunc sed id semper risus in hendrerit gravida. Molestie a iaculis at erat pellentesque adipiscing commodo. Amet nulla facilisi morbi tempus. Auctor augue mauris augue neque. Euismod lacinia at quis risus sed. Etiam erat velit scelerisque in. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit.
+## RETO:
 
-Augue interdum velit euismod in pellentesque massa placerat. Aenean sed adipiscing diam donec adipiscing. Lobortis scelerisque fermentum dui faucibus in. Pellentesque habitant morbi tristique senectus et netus et. Diam sollicitudin tempor id eu nisl nunc. Cursus euismod quis viverra nibh. Interdum velit laoreet id donec ultrices tincidunt arcu. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Fermentum dui faucibus in ornare quam viverra orci sagittis. Ut tristique et egestas quis. Sit amet consectetur adipiscing elit ut. Pretium aenean pharetra magna ac placerat. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar.
+- Crear una vista parecida al de spotify
+
+## FUNCIONALIDADES:
+
+- Play
+- Pausa
+- Siguiente
+- Anterior
+- Barra de progreso

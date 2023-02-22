@@ -1,44 +1,284 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
-    Created on : May 9, 2020, 12:55:06 PM
-    Author     : ljavier
+    Author     : Team-ARES
 */
-@charset "utf-8";
-#play{
-    width:50px;
-    margin:20px auto;
-    background: #FC3;
-    padding: 5px;
-    border:2px solid #F60;  
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #121212;
+  font-family: 'Montserrat', sans-serif;
 }
 
-nav{
- margin: 10px 0;   
-    
+/* -------------------- CSS DE SANTIAGO -------------------- */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 196px;
+  background-color: #000000;
+  padding: 24px;
 }
-#botones{
-    float: left;
-    width:200px;
-    height:200px;
-}
-#barra{
-    background:#FFF;
-    width:400px;
-    height: 16px;
-    border: 1px solid #666;
-    padding: 3px;
-    margin-left:100px;
-    
-}
-#progreso{
-   position:absolute;
-   width: 0px;
-   height: 16px;
-   background: rgba(0,0,150,2);
-    
+.sidebar nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: #000000;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
+.sidebar .logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+}
+
+.sidebar .logo img {
+  width: 130px;
+  border-radius: 5%;
+}
+
+.sidebar .logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sidebar .list a{
+  position: relative;
+  color: #b3b3b3;
+  font-size: 14px;
+  display: table;
+  width: 196px;
+  padding: 10px;
+}
+
+.sidebar .list .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.sidebar .list .nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  text-align: left;
+}
+.sidebar .list .nav-item input{
+  color:#000000;
+  width: 50%;
+}
+
+.sidebar .list a:hover{
+  background: rgb(20, 139, 5);
+}
+
+.sidebar .list nav:hover{
+  width: 100px;
+  transition: all 0.5s ease;
+}
+
+.sidebar .list .team{
+  position: absolute;
+}
+
+/* -------------------- CSS DE ALFREDO -------------------- */
+.main-container {
+  margin-left: 245px;
+  margin-bottom: 100px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  padding: 14px 30px;
+}
+
+.topbar .navbar {
+  display: flex;
+  align-items: center;
+}
+.topbar .navbar ul {
+  list-style: none;
+}
+.topbar .navbar ul li {
+  display: inline-block;
+  margin: 0px 20px;
+  width: 70px;
+}
+
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* -------------------- CSS DE JEREMIAS -------------------- */
+.spotify-playlists {
+  padding: 20px 40px;
+}
+
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.spotify-playlists .list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: #181818;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+/* -------------------- CSS DE RENÉ -------------------- */
+.preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #282828;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview h6 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.preview p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.preview button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* @charset "utf-8";
+#play {
+  width: 50px;
+  margin: 20px auto;
+  background: #fc3;
+  padding: 5px;
+  border: 2px solid #f60;
+}
+
+nav {
+  margin: 10px 0;
+}
+#botones {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+#barra {
+  background: #fff;
+  width: 400px;
+  height: 16px;
+  border: 1px solid #666;
+  padding: 3px;
+  margin-left: 100px;
+}
+#progreso {
+  position: absolute;
+  width: 0px;
+  height: 16px;
+  background: rgba(0, 0, 150, 2);
+} */
