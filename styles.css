@@ -27,44 +27,66 @@ body {
 }
 
 /* -------------------- CSS DE ALFREDO -------------------- */
+
+
 .main-container {
   margin-left: 245px;
   margin-bottom: 100px;
 }
 
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #101010;
-  padding: 14px 30px;
+*{
+  margin:0px;
+  padding:0px;
 }
 
-.topbar .navbar {
-  display: flex;
-  align-items: center;
-}
-.topbar .navbar ul {
-  list-style: none;
-}
-.topbar .navbar ul li {
-  display: inline-block;
-  margin: 0px 20px;
-  width: 70px;
+#header {
+  margin:auto;
+  width:500px;
+  font-family:'Arial', Times, serif, Helvetica, sans-serif;
 }
 
-.topbar .navbar ul li a {
-  color: #b3b3b3;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 1px;
+ul, ol {
+  list-style:none;
 }
 
-.topbar .navbar ul li a:hover,
-.topbar .navbar ul li a:active,
-.topbar .navbar ul li a:focus {
-  color: #ffffff;
-  font-size: 15px;
+.nav {
+  width:500px; 
+  margin:0 auto; 
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+.nav li a:hover {
+  background-color:#434343;
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
 }
 
 /* -------------------- CSS DE JEREMIAS -------------------- */
