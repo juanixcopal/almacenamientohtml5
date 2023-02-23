@@ -12,6 +12,8 @@ body {
 }
 
 /* -------------------- CSS DE SANTIAGO -------------------- */
+
+
 .sidebar {
   position: fixed;
   left: 0;
@@ -24,6 +26,45 @@ body {
 
 .sidebar .logo img {
   width: 130px;
+}
+
+.sidebar .navigation ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar .navigation ul li {
+  padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+  color: #ffffff;
+}
+
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa {
+  color: #b3b3b3;
+}
+
+.sidebar .navigation ul li .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:hover .fa:active,
+.sidebar .navigation ul li a:hover .fa:focus {
+  color: #ffffff;
 }
 
 /* -------------------- CSS DE ALFREDO -------------------- */
