@@ -121,13 +121,14 @@ body {
 
 .spotify-playlists .list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   overflow: hidden;
 }
 
 .spotify-playlists .list .item {
-  min-width: 140px;
-  width: 160px;
+  min-width: 159px;
+  width: 179px;
   padding: 15px;
   background-color: #181818;
   border-radius: 6px;
