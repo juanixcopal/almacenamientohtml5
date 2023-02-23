@@ -27,66 +27,56 @@ body {
 }
 
 /* -------------------- CSS DE ALFREDO -------------------- */
-
-
 .main-container {
   margin-left: 245px;
   margin-bottom: 100px;
 }
 
-*{
-  margin:0px;
-  padding:0px;
+.topbar {
+  display: flex;
+  justify-content: center;
+  background-color: #101010;
+  padding: 25px 30px;
 }
 
-#header {
-  margin:auto;
-  width:500px;
-  font-family:'Arial', Times, serif, Helvetica, sans-serif;
+.topbar .navbar {
+  display: flex;
+  align-items: center;
 }
 
-ul, ol {
-  list-style:none;
+.topbar .navbar ul {
+  list-style: none;
+}
+.topbar .navbar ul li {
+  display: initial;
+  margin: 0px 25px;
+  width: 70px;
+}
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+  color: #ffffff;
+  font-size: 15px;
+}
+.topbar .navbar ul li.divider {
+  color: #ffffff;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
+}
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
+  background-color: #f2f2f2;
 }
 
-.nav {
-  width:500px; 
-  margin:0 auto; 
-}
-
-.nav > li {
-  float:left;
-}
-
-.nav li a {
-  background-color:#000;
-  color:#fff;
-  text-decoration:none;
-  padding:10px 12px;
-  display:block;
-}
-
-.nav li a:hover {
-  background-color:#434343;
-}
-
-.nav li ul {
-  display:none;
-  position:absolute;
-  min-width:140px;
-}
-
-.nav li:hover > ul {
-  display:block;
-}
-
-.nav li ul li {
-  position:relative;
-}
-
-.nav li ul li ul {
-  right:-140px;
-  top:0px;
 }
 
 /* -------------------- CSS DE JEREMIAS -------------------- */
