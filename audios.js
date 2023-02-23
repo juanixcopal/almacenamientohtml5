@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 let miaudio, reproducir, progreso, maximo
 maximo = 530
 function comenzar() {
@@ -17,12 +12,14 @@ function comenzar() {
 
 function clickando() {
   if (miaudio.paused === false && miaudio.ended == false) {
+    const play = "<span class='fa fa-play-circle'></span>"
     miaudio.pause()
-    reproducir.innerHTML = 'Play'
+    reproducir.innerHTML = play
     bucle = setInterval(estado, 30)
   } else {
+    const pause = "<span class='fa fa-pause-circle'></span>"
     miaudio.play()
-    reproducir.innerHTML = 'Pause'
+    reproducir.innerHTML = pause
   }
 }
 
@@ -32,12 +29,10 @@ function estado() {
     progreso.style.width = total + 'px'
   }
 }
-/*https://www.youtube.com/watch?v=9CUtIRtj8IM&list=PLU8oAlHdN5BnX63lyAeV0LzLnpGudgRrK&index=19
- * */
 
 function adelantando(posicion) {
   if (miaudio.paused === false && miaudio.ended === false) {
-    var ratonX = posicion.pageX - barra.offsetLeft // pageX y offsetLeft son propiedades que me permiten ubicar un punto en la pantalla
+    var ratonX = posicion.pageX - barra.offsetLeft
     var nuevoTiempo = (ratonX * mivideo.duration) / maximo
     miaudio.currentTime = nuevoTiempo
     progreso.style.width = ratonX + 'px'

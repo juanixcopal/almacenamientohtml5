@@ -76,44 +76,49 @@
 
       <!-------------------- CÓDIGO DE RENÉ -------------------->
       <div class="preview">
-        <div class="text">
-          <h6>Imagen de la música</h6>
-          <p>Descripcion de la música</p>
-        </div>
-        <div class="text">
-          <p>Aleatorio</p>
-        </div>
-        <div class="text">
-          <p>Anterior</p>
-          <h6>Play y pausa</h6>
-          <p>Siguiente</p>
-        </div>
-        <div class="text">
-          <p>Repetir</p>
-        </div>
-        <div class="text">
-          <p>Barra de progreso</p>
-        </div>
-      </div>
+          <div class="cover-image">
+            <img src="https://www.parati.com.ar/wp-content/uploads/2021/08/PLAYLIST-PARA-TI-DECO-3.jpg" alt="Music Cover Image">
+          </div>
+
+          <audio id="miaudio">
+            <source src="audio/moonlight.mp3">
+          </audio>
+
+          <div class="music-info">
+            <span class="title">Titulo de la cancion</span>
+            <span class="artist">Nombre artista</span>
+          </div>
+
+          <div class="controls">
+            <div class="actions">
+
+              <button class="random">
+                <span class="fa fa-random"></span>
+              </button>
+
+              <button class="previous">
+                <span class="fa fa-backward"></span>
+              </button>
+
+              <button class="play" id="play" >
+                <span class="fa fa-play-circle"></span>
+              </button>
+
+              <button class="next">
+                <span class="fa fa-forward"></span>
+              </button>
+
+              <button class="repeat">
+                <span class="fa fa-undo"></span>
+              </button>
+
+            </div>
+            <div class="progress-bar" id="barra">
+              <div id="progreso"></div>
+            </div>
+          </div>
     </div>
 
     <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="teamares"></script>
   </body>
-  <!-- <body>
-        <section id="reproductor">
-            <audio id="miaudio">
-                <source src="audio/moonlight.mp3">
-            </audio>
-            <nav>
-                <div id="botones">
-                    <button type="button" id="play"></button> 
-                </div>
-                <div id="barra">
-                    <div id="progreso"></div>
-                </div>
-            </nav>
-        
-        </section>
-        <div></div>
-    </body> -->
 </html>
